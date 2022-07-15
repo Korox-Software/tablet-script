@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link href="reset.css" rel="stylesheet" type="text/css" />
+   </head>
+   
+   <body class="hidden">
+      <div id="tablet">
+         <div class="content">
+            <iframe src="https://koroxcad.com/" width="1100" height="510"></iframe>  
+            <div id="blackbar">
+               <div class="button" onclick="closeCad()"></div>
+            </div>
+         </div> 
+      </div>
+         
+      </div>
+
+
+      <button onclick="CloseCAD()"type="button">Close CAD</button>
+					  <script> 
+					  function CloseCAD() {
+					   $.post('http://mdt0.5/NUIFocusOff', JSON.stringify({}));
+					  }
+					  </script>
+      <script src="script.js" type="text/javascript"></script>
+   </body>
+</html>

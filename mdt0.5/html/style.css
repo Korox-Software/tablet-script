@@ -1,0 +1,60 @@
+/*.hidden {
+    overflow: hidden;
+    display: none;
+} */
+
+/* The device with borders */
+
+#tablet {
+	position: absolute;
+	top: 25%;
+	width: 1100px;
+	height: 535px;
+	margin: auto;
+	border: 20px black solid;
+	background-color: #333;
+	border-top-width: 20px;
+	border-bottom-width: 20px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tablet .content {
+	width: 1100px;
+	height: 525px;
+	background: white;
+	flex-grow: 1;
+}
+
+.tablet .content {
+	margin-left: 37%;
+	margin-bottom: 15%;
+	margin-top: 10%;
+	border: 5px;
+	border-color: yellow
+}
+
+#blackbar {
+	background-color: black;
+	height: 25px;
+	width: 1100px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+}
+
+#blackbar .button {
+    margin-top: 5px;
+    display: block;
+	color: white;
+	z-index: 90;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+  	border: 1px solid white;
+	cursor: pointer;
+}
+
